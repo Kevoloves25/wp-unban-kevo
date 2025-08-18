@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #7B68EE; /* MediumSlateBlue */
+    --secondary-color: #8A2BE2; /* BlueViolet */
+    --text-color: #E0FFFF; /* LightCyan */
+    --bg-color: #121212; /* Darker background */
+    --card-bg: #1E1E1E;
+    --border-radius: 15px;
+    --shadow-light: 0 4px 15px rgba(123, 104, 238, 0.4);
+    --shadow-hover: 0 8px 30px rgba(138, 43, 226, 0.6);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #121212, #2d0c41);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+p {
+    color: #b0b0b0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 10px;
+    color: var(--text-color);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+textarea {
+    resize: none;
+    box-shadow: var(--shadow-light);
+}
+
+button, a.send-email-btn {
+    display: block;
+    width: 85%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+#generate-btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+#generate-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+.social{
+    text-decoration: none;
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.social > a{
+    background: var(--card-bg);
+    border: none;
+    display: flex;
+    height: 1cm;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-family: serif, Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 15px #7B68EE66;
+}
+
+.media:hover{
+    color: #0038FF;
+    box-shadow: var(--shadow-hover);;
+}
+
+.social > a:visited{
+    color: #1A5900;
+}
+
+#send-email-btn {
+    width: 92%;
+        background-color: #2a2a2a;
+    color: var(--text-color);
+    border: 1px solid rgba(224, 255, 255, 0.2);
+    text-decoration: none;
+    padding: 10px, 15;
+}
+
+
+#send-email-btn:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+button, a.action-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+/* New styles for the action buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between the buttons */
+    margin-top: 20px;
+}
+
+.action-btn {
+    width: 100%;
+    text-decoration: none; /* Make sure the link button looks like a button */
+}
+
+#copy-btn{
+    background-color: #2a2a2a; /* A dark background for contrast */
+    color: var(--text-color);
+    border: 1px solid rgba(224, 255, 255, 0.2);
+}
+
+#copy-btn:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+.hidden {
+    display: none;
+}
