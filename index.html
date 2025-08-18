@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Unban Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WhatsApp Unban Email Generator 🚀</h1>
+            <p>Generate a perfect appeal email in seconds. Get your account back!</p>
+        </header>
+
+        <form id="unban-form">
+            <div class="form-group">
+                <label for="ban-type">🧿 Type of Ban</label>
+                <select id="ban-type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="temporary">⌛ Temporary</option>
+                    <option value="permanent"> Permanently Banned</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="ban-reason">💎 Ban Reason</label>
+                <select id="ban-reason" required>
+                    <option value="" disabled selected>Select a reason</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="banned-number">📞 Your Banned Number</label>
+                <input type="text" id="banned-number" placeholder="+2547xxxxxxx" minlength="1" required>
+            </div>
+            
+            <button type="submit" id="generate-btn">🍃 Generate Email</button>
+            <br>
+            <div class="social">
+                <a href="#" class="media" style="border-radius: 15px 15px 0px 0px;">JOIN OUR WHATSAPP</a>
+                <a href="#" class="media" style="border-radius: 0px 0px 15px 15px;">JOIN OUR TELEGRAM</a>
+            </div><br>
+        </form>
+
+        <div id="result-section" class="hidden">
+            <textarea id="generated-email" rows="10" readonly></textarea>
+            <div class="action-buttons">
+                <button id="copy-btn" class="action-btn">📋 Copy Email</button>
+                <a href="#" id="send-email-btn" class="action-btn">📨 Send via Gmail</a>
+            </div>
+
+            <br>
+            <p>©Kevo Loves</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
