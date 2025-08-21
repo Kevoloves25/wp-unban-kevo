@@ -151,6 +151,12 @@ button, a.send-email-btn {
     padding: 10px, 15;
 }
 
+#generated-email{
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+}
 
 #send-email-btn:hover {
     background-color: #3a3a3a;
