@@ -125,7 +125,7 @@ button, a.send-email-btn {
     background: var(--card-bg);
     border: none;
     display: flex;
-    height: 1cm;
+    height: 1.5cm;
     text-decoration: none;
     align-items: center;
     justify-content: center;
